@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's draw a picture</title>
+    </head>
+    <body>
+        <h1>Let's draw a picture ({{conv_id}})</h1>
+
+        <div>
+            <form  action="/{{conv_id}}" method="post" >
+                <input type="text" id="desc" name="desc">
+                <input type="submit" value="Send">
+            </form>
+
+            <p></p>
+        </div>
+
+        <div id="picture">
+            <img id="pict" name="pict" alt="The created image" src="img/{{conv_id}}.png" style="width:100%;">
+        </div>
+
+    </body>
+</html>
